@@ -38,6 +38,7 @@ const handleAddExpense = () => {
         v-model="description"
         type="text"
         placeholder="Enter expense description"
+        maxlength="30"
         required
       />
     </div>
@@ -57,9 +58,10 @@ const handleAddExpense = () => {
           <input
             id="amount"
             v-model="amount"
-            type="number"
             step="0.01"
             placeholder="0.00"
+            inputmode="decimal"
+            maxlength="10"
             required
           />
         </div>
