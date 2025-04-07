@@ -1,14 +1,47 @@
 <!DOCTYPE html>
-<html lang="">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/payment-tracker/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vite App</title>
-    <script type="module" crossorigin src="/payment-tracker/assets/index-amhX28xH.js"></script>
-    <link rel="stylesheet" crossorigin href="/payment-tracker/assets/index-BEwiuHkI.css">
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Symbols Wallpaper</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden;
+      background: #333;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      background-image: 
+        url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="200" height="200"%3E%3Ctext x="25" y="50" font-size="35" fill="white"%3E%24%3C/text%3E%3Ctext x="75" y="100" font-size="35" fill="white"%3E%E2%82%AC%3C/text%3E%3Ctext x="125" y="150" font-size="35" fill="white"%3E%C2%A5%3C/text%3E%3Ctext x="175" y="200" font-size="35" fill="white"%3E%C2%A3%3C/text%3E%3C/svg%3E');
+      background-size: 200px 200px; /* Smaller grid for denser rows */
+      background-repeat: repeat;
+      opacity: 0.1;
+      animation: move-diagonal 10s linear infinite;
+      z-index: -1;
+    }
+
+    @keyframes move-diagonal {
+      from {
+        background-position: 0 0;
+      }
+      to {
+        background-position: -200px -200px; /* Matches the grid size for seamless repetition */
+      }
+    }
+  </style>
+  <script type="module" crossorigin src="/payment-tracker/assets/index-C5ac2m__.js"></script>
+  <link rel="stylesheet" crossorigin href="/payment-tracker/assets/index-BCYNf9Iw.css">
+</head>
+<body>
+  <div id="app"></div>
+</body>
 </html>
