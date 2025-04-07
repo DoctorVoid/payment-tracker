@@ -6,6 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/payment-tracker/', // The repository name matches 'payment-tracker'
   plugins: [
     vue(),
     vueDevTools(),
